@@ -1,8 +1,8 @@
+/* Remove duplicates from a vector without altering the original sequence*/
 #include <iostream>
 #include <vector>
 #include <set>
 #include <algorithm>
-
 int main()
 {
   std::set<int> uniqueValues;
