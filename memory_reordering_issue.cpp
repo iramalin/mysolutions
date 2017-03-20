@@ -1,5 +1,5 @@
 /*
- *Detecting memory reordering. Courtesy Preshing.com
+ *Detecting memory reordering. Inspired by Preshing.com
  */
 #include <iostream>
 #include <thread>
@@ -83,4 +83,41 @@ int main()
  *L1i cache:             32K
  *L2 cache:              2048K
  *
+ */
+
+
+/*iramalin@iramalin-VirtualBox:~/git/mysolutions$ ./a.out
+ *Detected 1 times out of 48016 tries.
+ *Detected 2 times out of 72672 tries.
+ *Detected 3 times out of 111150 tries.
+ *Detected 4 times out of 111429 tries.
+ *Detected 5 times out of 126597 tries.
+ *Detected 6 times out of 181660 tries.
+ *Detected 7 times out of 223642 tries.
+ *Detected 8 times out of 233007 tries.
+ *^C
+ *iramalin@iramalin-VirtualBox:~/git/mysolutions$ lscpu
+ *Architecture:          x86_64
+ *CPU op-mode(s):        32-bit, 64-bit
+ *Byte Order:            Little Endian
+ *CPU(s):                8
+ *On-line CPU(s) list:   0-7
+ *Thread(s) per core:    1
+ *Core(s) per socket:    8
+ *Socket(s):             1
+ *NUMA node(s):          1
+ *Vendor ID:             GenuineIntel
+ *CPU family:            6
+ *Model:                 158
+ *Model name:            Intel(R) Core(TM) i7-7700HQ CPU @ 2.80GHz
+ *Stepping:              9
+ *CPU MHz:               2807.998
+ *BogoMIPS:              5615.99
+ *Hypervisor vendor:     KVM
+ *Virtualization type:   full
+ *L1d cache:             32K
+ *L1i cache:             32K
+ *L2 cache:              256K
+ *L3 cache:              6144K
+ *NUMA node0 CPU(s):     0-7
  */
